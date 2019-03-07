@@ -175,6 +175,50 @@
                 -1.0
             ],
             "type" : "VEC3"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5123,
+            "count" : 36,
+            "max" : [
+                23
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 13,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                1.0000004768371582,
+                1.0,
+                1.0000005960464478
+            ],
+            "min" : [
+                -1.0000003576278687,
+                -1.0,
+                -1.0000003576278687
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 14,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type" : "VEC3"
         }
     ],
     "asset" : {
@@ -253,11 +297,29 @@
             "byteLength" : 288,
             "byteOffset" : 2304,
             "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 72,
+            "byteOffset" : 2592,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 2664,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 2952,
+            "target" : 34962
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 2592,
+            "byteLength" : 3240,
             "uri" : "CubeStatic.bin"
         }
     ],
@@ -269,18 +331,6 @@
                     0.6375310515989518,
                     0.640000066757203,
                     0.597671613062495,
-                    1.0
-                ],
-                "metallicFactor" : 0.0
-            }
-        },
-        {
-            "name" : "Material.001",
-            "pbrMetallicRoughness" : {
-                "baseColorFactor" : [
-                    0.640000066757203,
-                    0.001306820959699466,
-                    0.0,
                     1.0
                 ],
                 "metallicFactor" : 0.0
@@ -309,6 +359,30 @@
                 ],
                 "metallicFactor" : 0.0
             }
+        },
+        {
+            "name" : "Material.004",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.0015159222523260449,
+                    0.0,
+                    0.640000066757203,
+                    1.0
+                ],
+                "metallicFactor" : 0.0
+            }
+        },
+        {
+            "name" : "Material.005",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.0015159222523260449,
+                    0.0,
+                    0.640000066757203,
+                    1.0
+                ],
+                "metallicFactor" : 0.0
+            }
         }
     ],
     "meshes" : [
@@ -326,7 +400,7 @@
             ]
         },
         {
-            "name" : "Cube.002",
+            "name" : "Cube.005",
             "primitives" : [
                 {
                     "attributes" : {
@@ -334,12 +408,12 @@
                         "POSITION" : 4
                     },
                     "indices" : 3,
-                    "material" : 2
+                    "material" : 4
                 }
             ]
         },
         {
-            "name" : "Cube.001",
+            "name" : "Cube.002",
             "primitives" : [
                 {
                     "attributes" : {
@@ -360,6 +434,19 @@
                         "POSITION" : 10
                     },
                     "indices" : 9,
+                    "material" : 2
+                }
+            ]
+        },
+        {
+            "name" : "Cube.004",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 14,
+                        "POSITION" : 13
+                    },
+                    "indices" : 12,
                     "material" : 3
                 }
             ]
@@ -395,21 +482,21 @@
             ]
         },
         {
-            "mesh" : 2,
+            "mesh" : 4,
             "name" : "Cube.001",
             "scale" : [
-                0.11999999731779099,
-                0.11999999731779099,
-                0.11999999731779099
+                0.10000000149011612,
+                0.10000000149011612,
+                0.10000000149011612
             ],
             "translation" : [
                 0.0,
-                0.11999999731779099,
-                -0.0
+                0.10000000149011612,
+                -0.28796902298927307
             ]
         },
         {
-            "mesh" : 1,
+            "mesh" : 2,
             "name" : "Cube.002",
             "scale" : [
                 0.10000000149011612,
@@ -434,6 +521,20 @@
                 0.0,
                 0.009999999776482582,
                 -0.0
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Cube.004",
+            "scale" : [
+                0.10000000149011612,
+                0.10000000149011612,
+                0.10000000149011612
+            ],
+            "translation" : [
+                0.0,
+                0.10000000149011612,
+                0.27552834153175354
             ]
         },
         {
@@ -462,11 +563,12 @@
             "name" : "Scene",
             "nodes" : [
                 1,
-                5,
+                6,
                 0,
-                2,
                 3,
-                4
+                4,
+                2,
+                5
             ]
         }
     ]
